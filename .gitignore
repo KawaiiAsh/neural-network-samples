@@ -1,0 +1,82 @@
+# Byte-compiled / generated files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+.vscode/
+
+# IDE files
+.idea/
+.vscode/
+
+# Cache files
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Dependency directories
+lib/
+lib64/
+bin/
+include/
+python*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+
+# Distribution / packaging
+.Python
+develop-eggs/
+.installed.cfg
+*.egg
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Ignore database files
+*.sqlite3
+*.db
+
+# Ignore local configuration files
+*.local
+
+# Ignore generated HTML documentation
+docs/_build/
+
+# Ignore generated test and coverage reports
+.coverage
+htmlcov/
+.tox/
+
+# Ignore Python development environments
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+eggs/
+.venv/
+venv/
+.env/
+env/
+__init__.py
+
+# Ignore Python distribution artifacts
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
