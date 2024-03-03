@@ -1,3 +1,6 @@
+# 全连接神经网络（FCNN），有时也称为多层感知机（MLP）。这个网络包含了多个全连接层（或称为线性层）
+# 每个层都是线性变换（加权求和加偏置），后面跟着一个非线性激活函数（在例子中是ReLU）
+# 这种网络结构可以捕捉和学习输入数据中的复杂模式和关系，从而进行有效的预测或分类
 import torch
 import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
@@ -37,14 +40,14 @@ model = Net()
 
 # 定义损失函数和优化器
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.SGD(model.parameters(), lr=0.003, momentum=0.9)
+optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
 
 # 用于记录训练过程中的损失和准确率
 train_losses = []
 test_accuracies = []
 
 # 训练模型
-for epoch in range(10):  # 遍历数据集多次
+for epoch in range(100):  # 遍历数据集多次
     model.train()  # 设置模型到训练模式
     running_loss = 0.0
     for images, labels in train_loader:
